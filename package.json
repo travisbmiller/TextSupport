@@ -1,0 +1,27 @@
+{
+  "name": "TextSupport",
+  "version": "0.0.0",
+  "description": "TextSupport ===========",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/travisbmiller/TextSupport.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/travisbmiller/TextSupport/issues"
+  },
+  "homepage": "https://github.com/travisbmiller/TextSupport",
+  "dependencies": {
+    "body-parser": "^1.11.0",
+    "express": "^4.11.2",
+    "firebase": "^2.1.2",
+    "path": "^0.11.14",
+    "twilio": "^1.10.0"
+  }
+}

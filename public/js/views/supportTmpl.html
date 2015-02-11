@@ -1,0 +1,22 @@
+<div ng-controller="SupportCtrl as vm">
+  <h1>Support View</h1>
+
+
+  <div ng-repeat="message in vm.data" class="message_container">
+    
+    <span class="from_header">From: {{message["$id"]}}</span><br>
+      <div ng-repeat="eachMessage in message" class="message_block">  
+      <span>Time: {{eachMessage.date_created }}</span><br>
+      <span><span ng-if="eachMessage.status !== 'received'">Replay </span>Message: {{eachMessage.body}}</span><br>
+    </div>
+
+    <span class="reply_btn">Reply</span>
+    
+    <form ng-submit="reply(message, vm.replyMessage[message['$id']])">
+      <input ng-model="vm.replyMessage[message['$id']]"> 
+      
+      <button>Send Reply</button>
+    </form>
+    
+  </div>
+</div>  
